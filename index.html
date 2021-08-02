@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="node_modules/tablesort/tablesort.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Prix Carburant</title>
+</head>
+<body class="bg-transparent">
+    
+    <form id="choix"">
+        <img src="./oil.png" alt="">
+        <input type="text" name="ville" id="ville" placeholder="Entrez une ville" required>
+        <select name="carburants" id="carbchoice"  required>
+            <option value="">--Choisissez un carburant--</option>
+            <option value="E10">E10</option>
+            <option value="SP98">SP98</option>
+            <option value="Gazole">Gazole</option>
+            <option value="E85">E85</option>
+            <option value="GPLc">GPLc</option>  
+        </select>
+        <button id="valider">Valider</button>
+    </form>
+
+    <main>
+
+        <table id="tableau" class=" table table-striped">
+            <thead>
+              <tr>
+                <th scope="col" >Nom</th>
+                <th scope="col" >Prix</th>
+                <th scope="col">Adresse</th>
+              </tr>
+            </thead>
+            <tbody id="main">
+            
+            </tbody>
+          </table>
+
+    </main>
+    <script src='node_modules/tablesort/dist/tablesort.min.js'></script>
+    <script src='node_modules/tablesort/src/sorts/tablesort.number.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    </body>
+</html>
